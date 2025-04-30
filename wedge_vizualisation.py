@@ -75,7 +75,7 @@ def visualize_wedges(W: np.ndarray, save_name: str):
     verdict = "Not Injective" if 1. in np.unique(counts) else "Injective"
     plt.title(f"Wedge Visualization: Layer is {verdict}")
     
-    save_path = os.path.join(os.getcwd(), "img", save_name+".png")
+    save_path = os.path.join(os.getcwd(), "img", "Figure_2", save_name+".png")
     plt.savefig(save_path)
     plt.close()
 
@@ -89,7 +89,7 @@ def visualize_wedges(W: np.ndarray, save_name: str):
     ax.plot_surface(X, Y, results, facecolors=colors, shade=False)
     plt.title(f"Layer is {verdict}")
     
-    save_path = os.path.join(os.getcwd(), "img", save_name+"_3D.png")
+    save_path = os.path.join(os.getcwd(), "img", "Figure_2", save_name+"_3D.png")
     plt.savefig(save_path)
     plt.close()
 
